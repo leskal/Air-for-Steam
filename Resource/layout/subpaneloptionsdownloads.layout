@@ -5,20 +5,22 @@
 		place { control=DownloadRegionCombo dir=down width=max start=RegionLabel dir=down y=5 }
 
 		place { control=RestrictionsLabel dir=down start=DownloadRegionCombo y=20 }
-		place { control=ThrottleRates dir=down width=max start=RestrictionsLabel y=5 }
+		place { control=ThrottleCheckbox dir=down start=RestrictionsLabel y=5 }
+		place { control=ThrottleRateEdit dir=down width=125 start=ThrottleCheckbox x=2 y=1 }
+		place { control=ThrottleRateEditSuffix dir=right start=ThrottleRateEdit x=5 y=9 }
+		place { control=ThrottleRateApply dir=right start=ThrottleRateEditSuffix x=3}
 
 		place {
 			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox,AutoUpdateTimeRestrictCheckbox
 			dir=down
-			start=ThrottleRates
+			start=ThrottleRateEdit
 			y=20
 		}
 
-		place { control=AutoUpdateTimeRestrictStartLabel dir=down start=AutoUpdateTimeRestrictCheckbox y=10 }
-		place { control=AutoUpdateTimeRestrictStart dir=down width=205 start=AutoUpdateTimeRestrictStartLabel y=5 }
+		place { control=AutoUpdateTimeRestrictStart dir=down width=205 start=AutoUpdateTimeRestrictCheckbox y=15 }
 
-		place { control=AutoUpdateTimeRestrictEndLabel dir=down x=225 start=AutoUpdateTimeRestrictCheckbox y=10 }
-		place { control=AutoUpdateTimeRestrictEnd dir=down width=205 start=AutoUpdateTimeRestrictEndLabel y=5 }
+		place { control=AutoUpdateTimeRestrictEndLabel dir=down x=225 start=AutoUpdateTimeRestrictCheckbox }
+		place { control=AutoUpdateTimeRestrictEnd dir=right width=205 start=AutoUpdateTimeRestrictStart x=20 }
 
 		place { control=FlushDownloadConfigLabel dir=down start=AutoUpdateTimeRestrictStart y=30 }
 		place { control=FlushDownloadConfig dir=down start=FlushDownloadConfigLabel y=10 }
@@ -27,7 +29,7 @@
 		place { control=ManageInstalledApps dir=down start=ManageInstalledappsLabel y=10 }
 
 		place {
-			control=Divider1,Divider2,Divider3,RegionInfoLabel,LibrariesLabel,ThrottleRatesLabel,AllowDownloadsDuringGameplayInfo,ThrottleDownloadsWhileStreamingInfo
+			control=Divider1,Divider2,Divider3,RegionInfoLabel,LibrariesLabel,ThrottleRatesLabel,AllowDownloadsDuringGameplayInfo,ThrottleDownloadsWhileStreamingInfo,ThrottleRateCurrent,ThrottleRateEditLabel
 			height=0
 			width=0
 		}

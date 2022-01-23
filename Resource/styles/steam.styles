@@ -492,13 +492,14 @@ steam.styles {
 			minimum-width=52
 			textcolor=none
 			render_bg {
-				1="image( x0 + 24, y0 + 14, x1, y1, graphics/onfocus/hamburger )"
+				0="image( x0 + 24, y0 + 14, x1, y1, graphics/onfocus/hamburger )"
 			}
 		}
 
 		"MenuBar MenuButton:hover" {
 			textcolor=none
 			render_bg {
+				0="image( x0 + 17, y0 + 7, x1, y1, graphics/onfocus/active_circle )"
 				1="image( x0 + 24, y0 + 14, x1, y1, graphics/onfocus/hamburger_hover )"
 			}
 		}
@@ -506,8 +507,8 @@ steam.styles {
 		"MenuBar MenuButton:selected" {
 			textcolor=none
 			render_bg {
-				1="image( x0 + 17, y0 + 7, x1, y1, graphics/onfocus/active_circle )"
-				2="image( x0 + 24, y0 + 14, x1, y1, graphics/onfocus/hamburger_hover )"
+				0="image( x0 + 17, y0 + 7, x1, y1, graphics/onfocus/active_circle )"
+				1="image( x0 + 24, y0 + 14, x1, y1, graphics/onfocus/hamburger_hover )"
 			}
 		}
 

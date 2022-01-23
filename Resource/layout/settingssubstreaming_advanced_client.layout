@@ -8,16 +8,20 @@
 
 		region { name=body height=max width=max y=50 margin-bottom=50 }
 		region { name=box height=max width=max region=body margin-left=26 margin-right=26 }
-			place { control=DescriptionLabel region=box width=max}
-			place { control=BandwidthLabel region=box start=DescriptionLabel dir=down y=20 width=max }
+			place { control=DescriptionLabelLocal region=box width=max}
+			place { control=PerformanceOverlayLabel region=box start=DescriptionLabelLocal dir=down y=10 width=max }
+			place { control=PerformanceOverlay region=box start=PerformanceOverlayLabel dir=down y=5 width=max }
+			place { control=BandwidthLabel region=box start=PerformanceOverlay dir=down y=10 width=max }
 			place { control=BandwidthLimit region=box start=BandwidthLabel dir=down y=5 width=max }
-			place { control=ResolutionLabel region=box start=BandwidthLimit dir=down y=20 width=max }
+			place { control=ResolutionLabel region=box start=BandwidthLimit dir=down y=10 width=max }
 			place { control=ResolutionLimit region=box start=ResolutionLabel dir=down y=5 width=max }
-			place { control=AudioChannelsLabel region=box start=ResolutionLimit dir=down y=20 width=max }
+			place { control=AudioChannelsLabel region=box start=ResolutionLimit dir=down y=10 width=max }
 			place { control=AudioChannelSelect region=box start=AudioChannelsLabel dir=down y=5 width=max }
+			place { control=ControllerOverlayHotkeyLabel region=box start=AudioChannelSelect dir=down y=10 width=max }
+			place { control=ControllerOverlayHotkey region=box start=ControllerOverlayHotkeyLabel dir=down y=5 width=max }
 			place {
-				control=EnableHardwareDecoding,EnableDebugOverlay
-				region=box start=AudioChannelSelect dir=down y=20
+				control=EnableHardwareDecoding,EnableTouchController
+				region=box start=ControllerOverlayHotkey dir=down y=15
 			}
 
 		region { name=buttons align=bottom height=50 }

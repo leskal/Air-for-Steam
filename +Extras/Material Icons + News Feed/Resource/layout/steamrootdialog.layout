@@ -54,6 +54,38 @@
 				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/inbox_active_hover )"
 			}
 		}
+		
+		announcement_button {
+			render_bg
+			{
+				0="image( x0, y0, x1, y1, dark_blue )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/announcement )"
+			}
+		}
+
+
+		announcement_button:hover {
+			render_bg
+			{
+				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/announcement_hover )"
+			}
+		}
+
+		announcement_button_active {
+			render_bg
+			{
+				0="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/announcement_hover )"
+			}
+		}
+		
+		announcement_button_active:hover {
+			render_bg
+			{
+				0="image( x0, y0, x1, y1, graphics/onfocus/active_circle )"
+				1="image( x0 + 6, y0 + 6, x1, y1, graphics/onfocus/announcement_hover )"
+			}
+		}
 
 		parental_lock_button {
 			image=graphics/none
@@ -99,7 +131,8 @@
 			place [!$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=118 }
 			place [$OSX] { control=AccountButton region=header align=right y=7 height=41 width=36 margin-right=20 }
 			place { control=InboxButton region=header align=right y=7 height=50 width=36 margin-right=4 end-right=AccountButton }
-			place { control=UIStatusPanel region=header align=right y=7 height=50 width=36 margin-right=4 end-right=InboxButton }
+			place { control=AnnouncementButton region=header align=right y=7 height=50 width=36 margin-right=4 end-right=InboxButton }
+			place { control=UIStatusPanel region=header align=right y=7 height=50 width=36 margin-right=4 end-right=AnnouncementButton }
 
 		place { control=UINavigatorPanel width=max height=max }
 

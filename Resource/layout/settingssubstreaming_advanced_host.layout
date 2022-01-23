@@ -10,7 +10,7 @@
 		region { name=box height=max width=max region=body margin-left=26 margin-right=26 }
 			place { control=DescriptionLabel region=box width=max}
 			place {
-				control=ChangeDesktopResolution,DynamicallyAdjustResolution,EnableCaptureNVFBC,EnableHardwareEncoding,EnableHardwareEncodingNVIDIA,EnableHardwareEncodingAMD,EnableHardwareEncodingIntel,EnableTrafficPriorityLabel,EnableTrafficPriority
+				control=HostPlayAudioAlways,ChangeDesktopResolution,DynamicallyAdjustResolution,EnableCaptureNVFBC,EnableHardwareEncoding,EnableHardwareEncodingNVIDIA,EnableHardwareEncodingAMD,EnableHardwareEncodingIntel,EnableTrafficPriorityLabel,EnableTrafficPriority
 				region=box
 				start=DescriptionLabel
 				dir=down

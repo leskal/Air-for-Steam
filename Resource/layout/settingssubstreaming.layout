@@ -7,12 +7,17 @@
 		place { control=EnableStreaming start=RemoteClientList dir=down width=max y=10 }
 
 		place { control=SetPin start=EnableStreaming dir=down y=10 }
-		place { control=AdvancedHostOptions start=SetPin dir=down y=0 }
+		place { control=Pair start=SetPin dir=down y=0 }
+		place { control=Unpair start=Pair dir=down y=0 }
+		place { control=AdvancedHostOptions start=Unpair dir=down y=0 }
 		place { control=AdvancedClientOptions start=AdvancedHostOptions dir=down y=0 }
+		
+		place { control=P2PScopeLabel start=AdvancedClientOptions dir=down width=max y=30 }
+		place { control=P2PScope start=P2PScopeLabel dir=down width=max y=5 }
 
-		place { control=ClientLabel start=AdvancedClientOptions dir=down width=max y=30 }
+		place { control=ClientLabelLocal start=P2PScope dir=down width=max y=30 }
 
-		place { control=QualityFast start=ClientLabel dir=down y=5 }
+		place { control=QualityFast start=ClientLabelLocal dir=down y=5 }
 		place { control=QualityBalanced start=QualityFast dir=right margin-left=10 }
 		place { control=QualityBeautiful start=QualityBalanced dir=right margin-left=10 }
 

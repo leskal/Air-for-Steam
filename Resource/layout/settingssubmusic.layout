@@ -29,10 +29,13 @@
 			dir=down start=PauseMusicHeader y=5
 		}
 
-		place { control=NotificationHeader 							dir=down x=215 start=EnableMediaKeysCheckbox y=30 }
+		place { control=AdditionalFilesHeader 					    dir=down x=215 start=EnableMediaKeysCheckbox y=30 }
+		place { control=AdditionalFilesHighQualityCheckbox 		    dir=down start=AdditionalFilesHeader y=5 }
+		
+		place { control=NotificationHeader 							dir=down start=PauseMusicWhenVoiceChatCheckbox y=30 }
 		place { control=NotificationPlaylistNowPlayingCheckbox 		dir=down start=NotificationHeader y=5 }
 
-		place { control=LoggingHeader 								dir=down start=PauseMusicWhenVoiceChatCheckbox y=30 }
+		place { control=LoggingHeader 								dir=down start=AdditionalFilesHighQualityCheckbox y=53 }
 		place { control=LoggingCrawlingCheckbox 					dir=down start=LoggingHeader y=5 }
 
 		place { control=LibraryDivider,DatabaseDivider,LibraryHeader,DatabaseHeader,VolumeHeader,VolumeSlider,VolumeDivider height=0 width=0 }

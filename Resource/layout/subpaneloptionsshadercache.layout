@@ -1,6 +1,6 @@
 "Resource/layout/subpaneloptionsshadercache.layout" {
 
 	layout {
-		place { control=ShaderCacheInfo,ShaderCacheEnabledCheckbox dir=down width=max spacing=10 }
+		place { control=ShaderCacheInfo,ShaderCacheEnabledCheckbox,ShaderCacheBGProcessingEnabledCheckbox dir=down width=max spacing=10 }
 	}
 }

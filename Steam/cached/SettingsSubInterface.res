@@ -1,7 +1,7 @@
 steam/cached/SettingsSubInterface.res {
 	layout {
-		place { control=Label4 dir=down }
-		place { control=LanguageCombo dir=down width=max start=Label4 y=5 }
+		place { control=LabelLanguageCombo dir=down }
+		place { control=LanguageCombo dir=down width=max start=LabelLanguageCombo y=5 }
 		place { control=TranslationLabel dir=down width=max start=LanguageCombo y=20 }
 
 		place { control=Label1 dir=down start=TranslationLabel y=20 }

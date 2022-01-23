@@ -14,20 +14,27 @@
 
 		place { control=ShowIngameFPSContrastCheck		dir=down start=ShowIngameFPSCombo y=20 }
 
-		place { control=HotKeySelectorLabel				dir=down start=ShowIngameFPSContrastCheck y=30 }
-		place { control=HotKeySelector					dir=down width=max start=HotKeySelectorLabel y=5 }
+		place { control=HotKeySelectorLabel				dir=down width=215 start=ShowIngameFPSContrastCheck y=30 }
+		place { control=HotKeySelector					dir=down width=215 start=HotKeySelectorLabel y=5 }
 
-		place { control=ScreenshotLabel					dir=down start=HotKeySelector y=30 }
+		place { control=ScreenshotLabel					dir=right width=max start=HotKeySelectorLabel x=25 }
 		place { control=ScreenshotHotKeySelector		dir=down width=max start=ScreenshotLabel y=5 }
 
-		place { control=ScreenshotActionLabel			dir=down start=ScreenshotHotKeySelector y=30 }
+		place { control=ScreenshotActionLabel			dir=down width=215 start=HotKeySelector y=30 }
 		place {
 			control=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
-			dir=down start=ScreenshotActionLabel y=5
+			dir=down width=215 start=ScreenshotActionLabel y=5
 		}
 
 		place { control=SetScreenshotFolderButton		dir=down start=ScreenshotSaveUncompressedCheck y=10 }
+		
+		place { control=ShareIPNetworkingLabel		dir=right width=max start=ScreenshotActionLabel x=25 }
+		place { control=ShareIPNetworkingURL		dir=down width=max start=ShareIPNetworkingLabel y=5 }
+		place { control=ShareIPNetworkingCombo		dir=down width=max start=ShareIPNetworkingURL y=10 }
+		
+		place { control=TextFilterLabel		dir=down width=max start=SetScreenshotFolderButton y=30 }
+		place { control=TextFilterUpdateSettingURL		dir=down width=max start=TextFilterLabel y=5 }
 
-		place { control=Divider1,DescriptionLabel,TitleLabel,PingRateInfo height=0 width=0 }
+		place { control=Divider1,Divider2,DescriptionLabel,TitleLabel,PingRateInfo,ShareIPNetworkingInfo,TextFilterStatus height=0 width=0 }
 	}
 }

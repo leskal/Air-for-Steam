@@ -1,0 +1,23 @@
+"Resource/layout/subpaneloptionsingame.layout" {
+
+	layout {
+		place { control=TitleLabel dir=down height=0 width=0 }
+		
+		place { control=LibraryDisplaySizeLabel dir=down width=max dir=down }
+		place { control=LibraryDisplaySizeAutomatic dir=down width=max start=LibraryDisplaySizeLabel y=5 }
+		place { control=LibraryDisplaySizeAutomaticLabel dir=down width=max start=LibraryDisplaySizeAutomatic x=30 y=5 }
+		place { control=LibraryDisplaySizeSmall,LibraryDisplaySizeMedium,LibraryDisplaySizeLarge dir=down width=max start=LibraryDisplaySizeAutomaticLabel x=-30 y=5 }
+
+		place { control=LibraryLowBandwidthCheckbox dir=down width=255 start=LibraryDisplaySizeLarge y=30 }
+		place { control=LibraryLowBandwidthLabel dir=down width=255 start=LibraryLowBandwidthCheckbox }
+		
+		place { control=LibraryLowPerfCheckbox dir=right width=max start=LibraryLowBandwidthCheckbox }
+		place { control=LibraryLowPerfLabel dir=down width=max start=LibraryLowPerfCheckbox }
+		
+		place { control=LibraryDisableCommunityContentCheckbox dir=down width=255 start=LibraryLowBandwidthLabel y=15 }
+		place { control=LibraryDisableCommunityContentLabel start=LibraryDisableCommunityContentCheckbox dir=down width=255}
+		
+		place { control=LibraryDisplayIconInGameListCheckbox dir=right width=max start=LibraryDisableCommunityContentCheckbox }
+
+	}
+}
