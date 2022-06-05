@@ -119,7 +119,6 @@ Scheme {
 				"ypos"		3 [$OSX]
 				"wide"		20
 				"tall"		20
-				"visible" 	0 [!$OSX]
 				"PinCorner"	1
 				"PinCorner"	0 [$OSX]
 			}
