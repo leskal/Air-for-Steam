@@ -3,7 +3,7 @@
 	layout {
 		place {
 			control=AuthorizedDeviceCheck,ShowNotificationsCheck
-			dir=down width=max
+			dir=down width=max margin-top=-4
 		}
 		place { control=ManageSharingLabel dir=down start=ShowNotificationsCheck y=10 }
 
