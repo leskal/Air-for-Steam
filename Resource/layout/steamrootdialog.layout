@@ -104,7 +104,7 @@
 		place { control=UINavigatorPanel width=max height=max }
 
 		place {
-			control=view_friends,online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label
+			control=AnnouncementButton,view_friends,online_friends,startvr,exitvr,SupportAlert,fullscreen,New,add_game,ImageLogo,BigPictureBG,FriendPanel,account_balance,account_balance_seperator,account_URL,universe_label
 			height=0
 			width=0
 			margin-left=-9999
