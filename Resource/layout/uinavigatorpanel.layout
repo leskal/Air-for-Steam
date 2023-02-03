@@ -75,73 +75,73 @@
 		place { control=library_music_menu align=left x=256 y=49 height=21 width=20 }
 		place { control=library_music_player_icon align=right y=64 height=24 width=24 margin-right=24 }
 
-		place { control=emailreminderbar,phonereminderbar region=body dir=down width=max height=50 }
+		place { control=LibraryAnchor,LibraryAnchor region=body dir=down width=max height=50 }
 
 		place {
 			control=WebPanel
 			width=max
 			height=max
-			start=phonereminderbar
+			start=LibraryAnchor
 			dir=down
 		}
 
 		place {
 			control=BroadcastPage
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 		}
 
 		place {
 			control=GamesPage_Details
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 		}
 
 		place {
 			control=GamesPage_List
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 			y=9
 		}
 
 		place {
 			control=GamesPage_Grid
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 			y=30
 			margin-bottom=-2
 		}
 
 		place {
 			control=DownloadsPage
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 		}
 
 		place {
 			control=ScreenshotsPage
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 		}
 
 		place {
 			control=MediaPage
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 		}
 
 		place {
 			control=MusicPage_Details
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 		}
 
 		place {
 			control=ToolsPage
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 			y=9
 		}
 
 		place {
 			control=ConsolePage
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 		}
 
 		place {
 			control=NewLibraryPage
-			width=max height=max start=phonereminderbar dir=down
+			width=max height=max start=LibraryAnchor dir=down
 		}
 
 		place {
