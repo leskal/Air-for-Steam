@@ -12,10 +12,10 @@
 		place { control=AdvancedHostOptions start=Unpair dir=down y=0 }
 		place { control=AdvancedClientOptions start=AdvancedHostOptions dir=down y=0 }
 		
-		place { control=P2PScopeLabel start=AdvancedClientOptions dir=down width=max y=30 }
+		place { control=P2PScopeLabel start=AdvancedClientOptions dir=down width=max y=20 }
 		place { control=P2PScope start=P2PScopeLabel dir=down width=max y=5 }
 
-		place { control=ClientLabelLocal start=P2PScope dir=down width=max y=30 }
+		place { control=ClientLabelLocal start=P2PScope dir=down width=max y=20 }
 
 		place { control=QualityFast start=ClientLabelLocal dir=down y=5 }
 		place { control=QualityBalanced start=QualityFast dir=right margin-left=10 }

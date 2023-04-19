@@ -4,11 +4,11 @@
 		place { control=DescriptionLabel width=max }
 		place { control=GeneralSettingsButton start=DescriptionLabel dir=down y=20 }
 
-		place { control=DescriptionBindingLabel start=GeneralSettingsButton width=max dir=down y=30 }
+		place { control=DescriptionBindingLabel start=GeneralSettingsButton width=max dir=down y=20 }
 		place { control=BigPictureConfigButton,DesktopConfigButton,GuideConfigButton start=DescriptionBindingLabel dir=down y=20 }
 
 		place { control=TitleLabel,Divider1,Divider2 height=0 width=0 }
-		place { control=DisableNotificationsCheckbox start=GuideConfigButton dir=down y=30 }
+		place { control=DisableNotificationsCheckbox start=GuideConfigButton dir=down y=20 }
 		place { control=DisableDualSenseUpdatesCheckbox start=DisableNotificationsCheckbox dir=down }
 	}
 }

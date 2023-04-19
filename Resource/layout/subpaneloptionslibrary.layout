@@ -8,14 +8,14 @@
 		place { control=LibraryDisplaySizeAutomaticLabel dir=down width=max start=LibraryDisplaySizeAutomatic x=30 y=5 }
 		place { control=LibraryDisplaySizeSmall,LibraryDisplaySizeMedium,LibraryDisplaySizeLarge dir=down width=max start=LibraryDisplaySizeAutomaticLabel x=-30 y=5 }
 
-		place { control=LibraryLowBandwidthCheckbox dir=down width=255 start=LibraryDisplaySizeLarge y=30 }
-		place { control=LibraryLowBandwidthLabel dir=down width=255 start=LibraryLowBandwidthCheckbox }
+		place { control=LibraryLowBandwidthCheckbox dir=down width=235 start=LibraryDisplaySizeLarge y=20 }
+		place { control=LibraryLowBandwidthLabel dir=down width=235 start=LibraryLowBandwidthCheckbox }
 		
 		place { control=LibraryLowPerfCheckbox dir=right width=max start=LibraryLowBandwidthCheckbox }
 		place { control=LibraryLowPerfLabel dir=down width=max start=LibraryLowPerfCheckbox }
 		
-		place { control=LibraryDisableCommunityContentCheckbox dir=down width=255 start=LibraryLowBandwidthLabel y=15 }
-		place { control=LibraryDisableCommunityContentLabel start=LibraryDisableCommunityContentCheckbox dir=down width=255}
+		place { control=LibraryDisableCommunityContentCheckbox dir=down width=235 start=LibraryLowBandwidthLabel y=15 }
+		place { control=LibraryDisableCommunityContentLabel start=LibraryDisableCommunityContentCheckbox dir=down width=235}
 		
 		place { control=LibraryDisplayIconInGameListCheckbox dir=right width=max start=LibraryDisableCommunityContentCheckbox }
 

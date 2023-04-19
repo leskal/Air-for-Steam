@@ -32,8 +32,8 @@
 		place { control=ShareIPNetworkingURL		dir=down width=max start=ShareIPNetworkingLabel y=5 }
 		place { control=ShareIPNetworkingCombo		dir=down width=max start=ShareIPNetworkingURL y=10 }
 		
-		place { control=TextFilterLabel		dir=down width=max start=SetScreenshotFolderButton y=30 }
-		place { control=TextFilterUpdateSettingURL		dir=down width=max start=TextFilterLabel y=5 }
+		place { control=TextFilterLabel	dir=down width=max start=SetScreenshotFolderButton y=20 }
+		place { control=TextFilterUpdateSettingURL dir=down width=max start=TextFilterLabel y=5 }
 
 		place { control=Divider1,Divider2,DescriptionLabel,TitleLabel,PingRateInfo,ShareIPNetworkingInfo,TextFilterStatus height=0 width=0 }
 	}

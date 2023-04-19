@@ -19,7 +19,8 @@
 			}
 			place { control=SoftwareEncodingThreadsLabel region=box start=EnableHardwareEncodingIntel dir=down y=20 width=max }
 			place { control=SoftwareEncodingThreads region=box start=SoftwareEncodingThreadsLabel dir=down y=5 width=max }
-			place { control=EnableTrafficPriorityLabel region=box start=SoftwareEncodingThreads dir=down y=30 width=max }
+
+			place { control=EnableTrafficPriorityLabel region=box start=SoftwareEncodingThreads dir=down y=20 width=max }
 			place { control=EnableTrafficPriority region=box start=EnableTrafficPriorityLabel dir=down y=10 width=max }
 
 		region { name=buttons align=bottom height=50 }

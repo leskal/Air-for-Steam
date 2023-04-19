@@ -7,10 +7,10 @@
 		}
 		place { control=ManageSharingLabel dir=down start=ShowNotificationsCheck y=10 }
 
-		place { control=FamilyOptionsText dir=down width=max start=ManageSharingLabel y=30 }
+		place { control=FamilyOptionsText dir=down width=max start=ManageSharingLabel y=20 }
 		place { control=ManageOptionsLabel dir=down start=FamilyOptionsText y=10 }
 		
-		place { control=BorrowersLabel dir=down width=max start=ManageOptionsLabel y=30 }
+		place { control=BorrowersLabel dir=down width=max start=ManageOptionsLabel y=20 }
 		place { control=BorrowersList dir=down width=max height=120 start=BorrowersLabel y=20 }
 
 		place { control=Divider1,FamilySharingInfoText,FamilySharingTitle,FamilyOptionsTitle height=0 width=0 }
