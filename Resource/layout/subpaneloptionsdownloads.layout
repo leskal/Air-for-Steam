@@ -22,14 +22,17 @@
 		place { control=AutoUpdateTimeRestrictEndLabel dir=down x=225 start=AutoUpdateTimeRestrictCheckbox }
 		place { control=AutoUpdateTimeRestrictEnd dir=right width=205 start=AutoUpdateTimeRestrictStart x=20 }
 
-		place { control=FlushDownloadConfigLabel dir=down start=AutoUpdateTimeRestrictStart y=30 }
+		place { control=FlushDownloadConfigLabel dir=down start=AutoUpdateTimeRestrictStart y=20 }
 		place { control=FlushDownloadConfig dir=down start=FlushDownloadConfigLabel y=10 }
 
-		place { control=ManageInstalledappsLabel dir=down start=FlushDownloadConfig y=30 }
+		place { control=ManageInstalledappsLabel dir=down start=FlushDownloadConfig y=20 }
 		place { control=ManageInstalledApps dir=down start=ManageInstalledappsLabel y=10 }
 
+		place { controls=PeerContentLabel dir=down start=ManageInstalledApps y=20 }
+		place { controls=PeerContentCombo dir=down width=325 start=PeerContentLabel y=10 }
+
 		place {
-			control=Divider1,Divider2,Divider3,RegionInfoLabel,LibrariesLabel,ThrottleRatesLabel,AllowDownloadsDuringGameplayInfo,ThrottleDownloadsWhileStreamingInfo,ThrottleRateCurrent,ThrottleRateEditLabel
+			control=Divider1,Divider2,Divider3,RegionInfoLabel,LibrariesLabel,ThrottleRatesLabel,AllowDownloadsDuringGameplayInfo,ThrottleDownloadsWhileStreamingInfo,ThrottleRateCurrent,ThrottleRateEditLabel,PeerContentInfoLabel
 			height=0
 			width=0
 		}
